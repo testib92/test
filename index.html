@@ -6,11 +6,9 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
 	<!-- Page Title ****************************************************************-->
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
+	<meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
      <meta name="description" content="Test webcam and microphone on your browser">
 
 	<!-- Page Title -->
@@ -30,12 +28,8 @@
 
 	<!-- Custom Scripts  -******************************************************* -->
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="./css/reading.css">
      <link rel="stylesheet" href="./css/webcam.css">
-     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
      <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
      <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 	
@@ -524,176 +518,7 @@
 	  
 	  
 	  <!-- Slide 8 test     ********************************************(#95) -->
-<section class="slide fade-6 kenBurns">
-  <section id="contact">
-    <div class="thankyou_message" style="display:none;">
-        <h2><em id="result"></em></h2>
-    </div>
 
-    <div id="body-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <div class="section-title">
-                        <h2>Tests pour le distanciel</h2>
-                        <h3>Une fois les tests effectués n'oubliez pas de cliquer sur "Envoyer" en bas de la page.</h3>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12">
-                        <fieldset>
-                             <label for="Stage">Intitulé de la formation</label>
-                            <!--                      <input id="Stage" name="Stage" placeholder="Azure AZ 900" />-->
-                            <span id="Stage" class="selectivity-input"></span>
-                        </fieldset>
-                    </div>
-                    <div id="show_formation_software_installed" style="display: none;">
-                        <div class="col-md-12 col-sm-12">
-                            <fieldset>
-                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
-                                <select name="formation_software_installed" id="formation_software_installed">
-                                    <option value="non">non</option>
-                                    <option value="oui">oui</option>
-                                </select>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div>
-                       <div class="col-md-6 col-sm-6">
-                         <table>
-                              <label for="name">Nom et Prénom</label>
-                            <input id="name" name="name"  required placeholder="Aires Jérémy" />
-                        </fieldset>
-                         </tr>
-                         <tr>
-                        <fieldset>
-                            <label for="email">Votre adresse Mail</label>
-                            <input id="email" name="email" type="email" value=""
-                                   required placeholder="Nom.prénom@gmail.com"/>
-                        </fieldset>
-                         </tr>
-
-                        <tr>  
-                        <fieldset>
-                            <label for="Numero">Téléphone (facultatif)</label>
-                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
-                        </fieldset>
-                         </tr>
-                         <tr>
-                        <fieldset>
-                            <label for="Date">Date de formation</label>
-                            <input type="date" name="Date" id="start" name="trip-start"
-                                   value=""
-                                   min="2020-01-01" max="2020-12-31">
-                        </fieldset>
-                         </tr>                 
-                         </table>
-                    </div>
-
-     
-                    <div class="col-md-6 col-sm-6">
-                        <table class="t2"> <!-- IC-->
-
-
-                            <tr>
-                                <fieldset class="pure-group">
-                                    <td><label for="Download">Download</label></td>
-                                    <td><label for="Upload">Upload</label></td>
-                                    <td><label for="Ping">Ping</label></td>
-                                    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe></div>
-                               </fieldset>
-                          </tr>
-                           <tr>
-                        <fieldset class="pure-group">
-                            <td><input id="Download" name="Download"  required placeholder="? Mbps" /></td>
-                            <td><input id="Upload" name="Upload"  required placeholder="? Mbps" /></td>
-                            <td><input id="Ping" name="Ping" placeholder="? Ms" /></td>
-                        </fieldset>
-                          </tr>
-
-                    </table>
-
-                </div>
-             
-                      <!-- LE TEST CAMERA COMMENCE ICI -->
-             <div id="container" class="col-md-12 col-sm-12">
-                  <audio id="gum-audio"></audio>
-                                 <br>
-                                 <br>
-                                   <a id="button" class="btn-learnmore-orange" style="width: 86%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test video / audio</a>
-                                   <p style="font-size: 150%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
-                                  
-                  
-                  
-                  
-                  
-                                        <table>
-                                       
-                                              
-                                             <tr> 
-                                                  
-                                             <TD>
-                                             <fieldset class="pure-group" width=45%>
-                                            <label for="Video">Avez-vous une Webcam </label>
-                                            <input id="Video" name="Video" placeholder="Oui / Non" />
-                                          </fieldset>
-                                                  
-                                                  <TD width=10%>&nbsp;</TD>
-                                                  
-                                               </TD>
-                                                  
-                                                         <TD rowspan=2> 
-                                                       
-                                                  <video id="gum-video" playsinline style="width: 65%"></video> <!-- CAMERA -->
-                                                       
-                                             </TD> 
-                                             
-                                       </tr>
-                                      
-                                        <tr>
-                                             
-                                            <TD>
-                                            <fieldset class="pure-group" width=45%>
-                                     <label for="Son">Avez-vous un retour Micro </label>
-                                    <input id="Son" name="Son" required placeholder="Oui / Non" />
-                                </fieldset> 
-                                            </TD> 
-                                               <TD width=10%>&nbsp;</TD>
-                                          </tr>
-                                         
-                  </table>
-                                             
-                          
-                                </div>
-                     
-               
-                </div>
-         
-                <div class="col-md-6 col-sm-6">
-                    <br>
-                    <!-- <label for="message">Avez-vous des questions </label><br> -->
-                     <table cellspacing="15">
-                          <tr>             
-                    <fieldset class="pure-group">
-                       
-                         <td> 
-                              <textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
-                         </td>
-                               <td>
-                              <button class="button-success pure-button button-xlarge"> 
-                              <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
-                              </td>
-                     </fieldset>
-                        </tr>
-                     </table>
-                </div>
-           </form> 
-     </div> 
-</div> 
-     </div>
-    </div>
-</section>
-  <div class="background" style="background-image:url(assets/img/background/img-95.jpg)"></div>
-</section>
 <!-- Panel Bottom #01************************************************************************************** -->
 
 
