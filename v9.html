@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="description" content="Test webcam and microphone on your browser">
+		<!-- CLEAN MARKUP = GOOD KARMA.Hi source code lover,topyou're a curious person and a fast learner ;)Let's make something beautiful together. Contribute on Github:https://github.com/webslides/webslidesThanks!-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/reading.css">
+		<link rel="stylesheet" href="./css/webcam.css">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+		<!-- SEO -->
+		<title>Netflix's Culture &middot; TEST IB</title>
+		<meta name="description" content="Patty McCord wrote the document called 'Netflix Culture: Freedom & Responsibility'.It's one of the most important documents ever to come out of Silicon Valley.">
+		<!-- URL CANONICAL -->
+		<!-- 
+		<link rel="canonical" href="http://your-url.com/permalink">
+		 -->
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+		<!-- CSS Base -->
+		<link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+		<!-- Optional - CSS SVG Icons (Font Awesome) -->
+		<link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+		<!-- SOCIAL CARDS (ADD YOUR INFO) -->
+		<!-- FACEBOOK -->
+		<!-- EDIT -->
+		<meta property="og:url" content="http://your-url.com/permalink">
+		<!-- EDIT -->
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="WebSlides: Netflix's Culture" />
+		<meta property="og:description" content="Patty McCord created Netflix's culture. This is a homage.">
+		<!-- EDIT -->
+		<meta property="og:updated_time" content="2017-04-16T16:24:56">
+		<!-- EDIT -->
+		<meta property="og:image" content="../static/images/share-webslides.jpg" >
+		<!-- EDIT -->
+		<meta property="og:image:width" content="800">
+		<meta property="og:image:height" content="429">
+		<!-- TWITTER -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@webslides">
+		<!-- EDIT -->
+		<meta name="twitter:creator" content="@jlantunez">
+		<!-- EDIT -->
+		<meta name="twitter:title" content="WebSlides: Netflix's Culture">
+		<!-- EDIT -->
+		<meta name="twitter:description" content="Patty McCord created Netflix's culture. This is a homage.">
+		<!-- EDIT -->
+		<meta name="twitter:image" content="../static/images/share-webslides.jpg">
+		<!-- EDIT -->
+		<!-- SCRIPTS ajout pour test -->
+		<script data-cfasync="false" src="form-submission-handler.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+		
+		<script src="./js/adapter-latest.js"></script>
+		<script src="./js/video.js"></script>
+		<script src="./js/audio.js"></script>
+		<script type="text/javascript">
+			function toggleTest() {
+				var but = document.getElementById("button");
+				var vid = document.getElementById("gum-video");
+				var aud = document.getElementById("gum-audio");
+				if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+					but.innerHTML = "Stop Test";
+					vid.play();
+					aud.play();
+				}
+				 else {
+					but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+					vid.pause();
+					aud.pause();
+				}
+			}
+		</script>
+		<script>
+			</table>// Get the modal;
+			var modal = document.getElementById('myModal');
+			// Get the button that opens the modal
+			ar btn = document.getElementById("help-button");
+			// Get the <span> element that closes the modal
+			ar span = document.getElementsByClassName("close")[0];
+			// When the user clicks the button, open the modal
+			tn.onclick = function() {
+				modal.style.display = "block";
+			}
+			// When the user clicks on <span> (x), close the modal
+			pan.onclick = function() {
+				modal.style.display = "none";
+			}
+			// When the user clicks anywhere outside of the modal, close it
+			indow.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		<!-- Fin ajout script pour test -->
+		<link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+		<link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+		<link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+		<link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+		<link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+		<link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+		<link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+		<!-- Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#333333">
+	</head>
+	<body>
+		<main role="main">
+			<article id="webslides">
+				<!-- Quick Guide- Each parent 
+				<section>
+					 in the 
+					<article id="webslides">
+						 element is an individual slide.- Vertical sliding = 
+						<article id="webslides" class="vertical">
+							- 
+							<div class="wrap">
+								 = container 90% / 
+								<div class="wrap size-50">
+									 = 45%;-->
+									 
+								
+									 
+									 
+									 
+									 
+									<section class="bg-red">
+										<span class="background dark" style="background-image:url('https://source.unsplash.com/R1J6Z1cnJZc/1600x800')"></span>
+										<!--.wrap = container (width: 90%) -->
+										<div class="wrap aligncenter">
+											<h1><strong>Test Distanciel</strong></h1>
+											<br>
+											<p class="text-symbols">
+												* Vous voici sur la page de test distanciel, pour vous déplacer vous pouvez utilisé votre souris ou encore les flèches * 
+											</p>
+										</div>
+										<!-- .end .wrap -->
+									</section>
+									<section>
+										<div class="wrap size-50 bg-white">
+											<h2>
+												<svg class="fa-info-circle large">
+													<use xlink:href="#fa-info-circle"></use>
+												</svg>
+												<strong>Présentation</strong>
+											</h2>
+											<hr>
+											<!-- début du test -->
+											<div>
+												<label for="name">Nom et Prénom</label>
+												<input id="name" name="name"  required placeholder="Aires Jérémy" />
+												<label for="email">Votre adresse Mail</label>
+												<input id="email" name="email" type="email" value=""required placeholder="Nom.prénom@gmail.com"/>
+												<label for="Numero">Téléphone (facultatif)</label>
+												<input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
+											</div>
+											<!-- Fin de test.end .wrap -->
+										</section>
+										<!-- Début test 2  de test.end .wrap -->
+										<section>
+											<div class="wrap size-50 bg-white">
+												<h2>
+													<svg class="fa-info-circle large">
+														<use xlink:href="#fa-info-circle"></use>
+													</svg>
+													<strong>Formation</strong>
+												</h2>
+												<hr>
+												<!-- début du test -->
+												<div>
+													<label for="Date">Date de formation</label>
+													<input type="date" name="Date" id="start" name="trip-start"value=""min="2020-01-01" max="2020-12-31">
+													<label for="Stage">Intitulé de la formation</label>
+													<input id="Stage" name="Stage" placeholder="Azure AZ 900" />
+													<span id="Stage" class="selectivity-input"></span>
+												</div>
+												<div id="show_formation_software_installed" style="display: none;">
+													<div>
+														<label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+														<select name="formation_software_installed" id="formation_software_installed">
+															<option value="non">non</option>
+															<option value="oui">oui</option>
+														</select>
+													</div>
+												</div>
+											</section>
+											<!-- Fin de test.end .wrap -->
+											<!-- Début test 3 de test.end .wrap -->
+											<section>
+												<div class="wrap size-50 bg-white">
+													<h2>
+														<svg class="fa-info-circle large">
+															<use xlink:href="#fa-info-circle"></use>
+														</svg>
+														<strong>Avez vous des questions</strong>
+													</h2>
+													<hr>
+													<!-- début du test -->
+													<div>
+														<br>
+														<!-- 
+														<label for="message">Avez-vous des questions </label>
+														<br>
+														 -->
+														<textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
+														<button class="button-success pure-button button-xlarge"><i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
+													</div>
+												</section>
+												<!-- Fin de test.end .wrap -->
+												
+												
+												
+												
+												
+												
+												
+												<!-- Début test 3 de test999999999999999999999999999999999999999999999999999999999999999999.end .wrap -->
+											<section>
+												<div class="wrap size-50 bg-white">
+													<h2>
+														<svg class="fa-info-circle large">
+															<use xlink:href="#fa-info-circle"></use>
+														</svg>
+														<strong>test</strong>
+													</h2>
+													<hr>
+													<!-- début du test -->
+ <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwnrSqRIxsL5VvUGe09Od9JOt1h4wtawb000lg_/exec">
+
+
+<!-- Contact Section -->
+
+
+    <div class="thankyou_message" style="display:none;">
+        <h2><em id="result"></em></h2>
+    </div>
+
+    <div id="body-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                
+                   <div class="col-md-12 col-sm-12">
+                        <fieldset>
+                             <label for="Stage">Intitulé de la formation</label>
+                            <!--                      <input id="Stage" name="Stage" placeholder="Azure AZ 900" />-->
+                            <span id="Stage" class="selectivity-input"></span>
+                        </fieldset>
+                    
+                    <div id="show_formation_software_installed" style="display: none;">
+                        <div class="col-md-12 col-sm-12">
+                            <fieldset>
+                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+                                <select name="formation_software_installed" id="formation_software_installed">
+                                    <option value="non">non</option>
+                                    <option value="oui">oui</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
+					</div>
+                    <div>
+                       <div class="col-md-6 col-sm-6">
+                         <table>
+                              <label for="name">Nom et Prénom</label>
+                            <input id="name" name="name"   placeholder="Aires Jérémy" />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="email">Votre adresse Mail</label>
+                            <input id="email" name="email" type="email" value=""
+                                    placeholder="Nom.prénom@gmail.com"/>
+                        </fieldset>
+                         </tr>
+
+                        <tr>  
+                        <fieldset>
+                            <label for="Numero">Téléphone (facultatif)</label>
+                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="Date">Date de formation</label>
+                            <input type="date" name="Date" id="start" name="trip-start"
+                                   value=""
+                                   min="2020-01-01" max="2020-12-31">
+                        </fieldset>
+                         </tr>                 
+                         </table>
+                    </div>
+
+     
+                    <div class="col-md-6 col-sm-6">
+                        <table class="t2"> <!-- IC-->
+
+
+                            <tr>
+                                <fieldset class="pure-group">
+                                    <td><label for="Download">Download</label></td>
+                                    <td><label for="Upload">Upload</label></td>
+                                    <td><label for="Ping">Ping</label></td>
+                                    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe>
+                               </fieldset>
+                          </tr>
+                           <tr>
+                        <fieldset class="pure-group">
+                            <td><input id="Download" name="Download"   placeholder="? Mbps" /></td>
+                            <td><input id="Upload" name="Upload"   placeholder="? Mbps" /></td>
+                            <td><input id="Ping" name="Ping" placeholder="? Ms" /></td>
+                        </fieldset>
+                          </tr>
+
+                    </table>
+
+                </div>
+             
+                      <!-- LE TEST CAMERA COMMENCE ICI -->
+             <div id="container" class="col-md-12 col-sm-12">
+                  <audio id="gum-audio"></audio>
+                                 <br>
+                                 <br>
+                                   <a id="button" class="btn-learnmore-orange" style="width: 86%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test video / audio</a>
+                                   <p style="font-size: 150%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
+                                  
+                  
+                  
+                  
+                  
+                                        <table>
+                                       
+                                              
+                                             <tr> 
+                                                  
+                                             <TD>
+                                             <fieldset class="pure-group" width=45%>
+                                            <label for="Video">Avez-vous une Webcam </label>
+                                            <input id="Video" name="Video" placeholder="Oui / Non" />
+                                          </fieldset>
+                                                  
+                                                  <TD width=10%>&nbsp;</TD>
+                                                  
+                                               </TD>
+                                                  
+                                                         <TD rowspan=2> 
+                                                       
+                                                  <video id="gum-video" playsinline style="width: 65%"></video> <!-- CAMERA -->
+                                                       
+                                             </TD> 
+                                             
+                                       </tr>
+                                      
+                                        <tr>
+                                             
+                                            <TD>
+                                            <fieldset class="pure-group" width=45%>
+                                     <label for="Son">Avez-vous un retour Micro </label>
+                                    <input id="Son" name="Son"  placeholder="Oui / Non" />
+                                </fieldset> 
+                                            </TD> 
+                                               <TD width=10%>&nbsp;</TD>
+                                          </tr>
+                                         
+                  </table>
+                                             
+                          
+                                </div>
+                     
+               
+               
+         
+                <div class="col-md-6 col-sm-6">
+                    <br>
+                    <!-- <label for="message">Avez-vous des questions </label><br> -->
+                     <table cellspacing="15">
+                          <tr>             
+                    <fieldset class="pure-group">
+                       
+                         <td> 
+                              <textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
+                         </td>
+                               <td>
+                              <button class="button-success pure-button button-xlarge"> 
+                              <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
+                              </td>
+                     </fieldset>
+                        </tr>
+                     </table>
+                </div>
+           </form> 
+     </div> 
+</div> 
+     </div>
+    </div>
+
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-3 col-sm-3">
+                    <img src="images/logo.png" class="img-responsive">
+                    <!--<i class="fa fa-magnet"></i>-->
+               </div>
+
+               <div class="col-md-4 col-sm-4">
+                    <p>1 place de la pyramide, PUTEAUX</p>
+               </div>
+
+                <div class="col-md-5 col-sm-5">
+                     <p>Ib Formation | <font size=0.2rem ><em>by Aires Ribeiro Jérémy</em></font></p>
+                    </div>
+
+
+          </div>
+     </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+<script>
+    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
+    var items = [
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B206-16 - Excel 2016 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-13 - Excel 2013 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-10 - Excel 2010 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B210 - Excel - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-19 - Excel 2019 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-16 - Excel 2016 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-13 - Excel 2013 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-10 - Excel 2010 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B301 - Word - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-19 - Word 2019 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-16 - Word 2016 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-13 - Word 2013 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-10 - Word 2010 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B302 - Word - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-19 - Word 2019 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-16 - Word 2016 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-13 - Word 2013 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-10 - Word 2010 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B501 - PowerPoint - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-19 - PowerPoint 2019 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-16 - PowerPoint 2016 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-13 - PowerPoint 2013 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-10 - PowerPoint 2010 - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B401 - Access - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-19 - Access 2019 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-16 - Access 2016 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-13 - Access 2013 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
+{text: 'AZ900', software: null},
+    ];
+
+    var stageSelector = $('#Stage');
+    stageSelector.selectivity({
+        allowClear: true,
+        items: items.map(function (item) {
+            return item.text;
+        }),
+        placeholder: 'Azure AZ 900'
+    });
+    stageSelector.on('change', function () {
+        $('#show_formation_software_installed').css('display', 'none');
+        var value = stageSelector.selectivity('value');
+        var item = items.find(function (element) {
+            return element.text === value
+        });
+        if (item && item.software) {
+            $('#show_formation_software_installed').css('display', '');
+            $('#title_formation_software_installed').text(item.software);
+        }
+    })
+</script>
+
+ <script src="./js/adapter-latest.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/audio.js"></script>
+    <script type="text/javascript">
+      function toggleTest() {
+        var but = document.getElementById("button");
+        var vid = document.getElementById("gum-video");
+        var aud = document.getElementById("gum-audio");
+
+        if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+          but.innerHTML = "Stop Test";
+          vid.play();
+          aud.play();
+        } else {
+          but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+          vid.pause();
+          aud.pause();
+        }
+      }
+    </script>
+    <script>
+
+        </table>
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("help-button");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+
+												</section>
+												<!-- Fin de test.end .wrap 666666666666666666666666666666666666666666666666666666666666666666666-->
+												<section>
+													<!--.wrap = container (width: 90%) -->
+													<div class="wrap">
+														<div class="grid vertical-align">
+															<div class="column">
+																<h3><strong>Test de connexion</strong></h3>
+																<table>
+																	<tr>
+																		<td>
+																			<label for="Download">Download</label>
+																		</td>
+																		<td>
+																			<label for="Upload">Upload</label>
+																		</td>
+																		<td>
+																			<label for="Ping">Ping</label>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<input id="Download" name="Download"  required placeholder="? Mbps" />
+																		</td>
+																		<td>
+																			<input id="Upload" name="Upload"  required placeholder="? Mbps" />
+																		</td>
+																		<td>
+																			<input id="Ping" name="Ping" placeholder="? Ms" />
+																		</td>
+																	</tr>
+																</table>
+															</div>
+															<div class="column">
+																<iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- .end .wrap -->
+											</section>
+											<!-- Debut section 5 test video + son -->
+											<section>
+												<div class="wrap">
+													<div class="grid vertical-align">
+														<div class="column">
+															<h3><strong>Test de connexion</strong></h3>
+															<audio id="gum-audio"></audio>
+															<a id="button" class="btn-learnmore-orange" style="width: 86%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test video / audio</a>
+															<p style="font-size: 150%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
+															<table>
+																<tr>
+																	<TD>
+																		<label for="Video">Avez-vous une Webcam </label>
+																		<input id="Video" name="Video" placeholder="Oui / Non" />
+																	</TD>
+																</tr>
+																<tr>
+																	<TD>
+																		<label for="Son">Avez-vous un retour Micro </label>
+																		<input id="Son" name="Son" required placeholder="Oui / Non" />
+																	</TD>
+																</tr>
+															</table>
+														</div>
+														<div class="column">
+															<video id="gum-video" playsinline style="width: 65%"></video>
+														</div>
+													</div>
+												</div>
+											</section>
+											<!-- Fin du test webcam  .end .wrap -->
+											<section class="bg-red">
+												<span class="background" style="background-image:url('https://source.unsplash.com/BYYu5nvQoUM/1600x800')"></span>
+												<!--.wrap = container (width: 90%) -->
+												<div class="wrap aligncenter fadeInUp">
+													<h3><strong>Merci, un technicien IB reviendra vers vous</strong></h3>
+												</div>
+												<!-- .end .wrap -->
+											</section>
+											<section>
+												<!--.wrap = container (width: 90%) -->
+												<div class="wrap size-50">
+													<h2><strong>Présentation </strong> Nom et Prénom</h2>
+													<hr>
+													<!-- TEST IVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV -->
+													<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"  action="https://script.google.com/macros/s/AKfycbwnrSqRIxsL5VvUGe09Od9JOt1h4wtawb000lg_/exec">
+														<!-- Contact Section -->
+														<section id="contact">
+															<div class="thankyou_message" style="display:none;">
+																<h2><em id="result"></em></h2>
+															</div>
+															<div id="body-content">
+																<div class="container">
+																	<div class="row">
+																		<!-- SCRIPTS -->
+																		<script data-cfasync="false" src="form-submission-handler.js"></script>
+																		<script src="js/jquery.js"></script>
+																		<script src="js/bootstrap.min.js"></script>
+																		<script src="js/custom.js"></script>
+																		<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+																		<script src="./js/adapter-latest.js"></script>
+																		<script src="./js/video.js"></script>
+																		<script src="./js/audio.js"></script>
+																		<script type="text/javascript">
+																			function toggleTest() {
+																				var but = document.getElementById("button");
+																				var vid = document.getElementById("gum-video");
+																				var aud = document.getElementById("gum-audio");
+																				if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+																					but.innerHTML = "Stop Test";
+																					vid.play();
+																					aud.play();
+																				}
+																				 else {
+																					but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+																					vid.pause();
+																					aud.pause();
+																				}
+																			}
+																		</script>
+																		<script>
+																			</table>// Get the modal;
+																			var modal = document.getElementById('myModal');
+																			// Get the button that opens the modal
+																			ar btn = document.getElementById("help-button");
+																			// Get the <span> element that closes the modal
+																			ar span = document.getElementsByClassName("close")[0];
+																			// When the user clicks the button, open the modal
+																			tn.onclick = function() {
+																				modal.style.display = "block";
+																			}
+																			// When the user clicks on <span> (x), close the modal
+																			pan.onclick = function() {
+																				modal.style.display = "none";
+																			}
+																			// When the user clicks anywhere outside of the modal, close it
+																			indow.onclick = function(event) {
+																				if (event.target == modal) {
+																					modal.style.display = "none";
+																				}
+																			}
+																		</script>
+																	</div>
+																	<ol class="text-cols">
+																		<li>Judgment</li>
+																		<li>Communication</li>
+																		<li>Impact</li>
+																		<li>Curiosity</li>
+																		<li>Innovation</li>
+																		<li>Courage</li>
+																		<li>Passion</li>
+																		<li>Honesty</li>
+																		<li>Selflessness</li>
+																	</ol>
+																	<!--TBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB -->
+																</section>
+																
+																
+																<section class="bg-black">
+																	<span class="background" style="background-image:url('https://source.unsplash.com/26qZsuRwm0c/1600x800')"></span>
+																	<div class="wrap aligncenter">
+																		<h2><strong>Content that people love</strong></h2>
+																	</div>
+																	<!-- .end .wrap -->
+																</section>
+																<section class="fullscreen">
+																	<div class="embed">
+																		<video autoplay loop poster="https://webslides.tv/static/images/netflix.jpg">
+																			<source src="https://webslides.tv/static/videos/netflix.mp4" type="video/mp4"></video>
+																		</div>
+																		<!-- .end .embed -->
+																	</section>
+																	<section>
+																		<div class="wrap size-50">
+																			<h3><strong>3/7 Freedom & Responsibility</strong></h3>
+																			<p class="text-intro">
+																				Most companies have complex policies around what you can expense, how you travel, what gifts you can accept, etc.
+																			</p>
+																			<hr>
+																			<p class="text-intro">
+																				<strong>Netflix's Policy</strong>
+																				: "Act in Netflix's best interest" (5 words long).
+																			</p>
+																		</div>
+																		<!-- .end .wrap -->
+																	</section>
+																	<section>
+																		<div class="wrap">
+																			<h3><strong>"Act in Netflix's best interest"</strong> generally means...</h3>
+																			<ul class="flexblock border">
+																				<li>Expense only what you would otherwise not spend.</li>
+																				<li>Travel as you would if it were your own money.</li>
+																				<li>What gifts you can JEREMY?Disclose non-trivial vendor gifts.</li>
+																				<li>Take from Netflix only when it is inefficient to not take (calls...)</li>
+																			</ul>
+																		</div>
+																		<!-- .end .wrap -->
+																	</section>
+																	<section>
+																		<div class="wrap size-50 bg-white">
+																			<h4><strong>Summary of Freedom & Responsibility</strong></h4>
+																			<hr>
+																			<ol>
+																				<li>As we grow, minimize rules.</li>
+																				<li>Inhibit chaos with ever more high performance people.</li>
+																				<li><strong>Flexibility is more important than efficiency</strong> in the long term.</li>
+																			</ol>
+																		</div>
+																		<!-- .end .wrap -->
+																	</section>
+																	<section>
+																		<div class="wrap">
+																			<div class="grid">
+																				<div class="column">
+																					<p class="text-context">
+																						This is a homage.
+																					</p>
+																					<p class="text-intro">
+																						<a href="http://firstround.com/review/The-woman-behind-the-Netflix-Culture-doc/">Patty McCord</a>
+																						 wrote 
+																						<strong>"Netflix Culture: Freedom & Responsibility"</strong>
+																						. Go to 
+																						<a href="https://www.slideshare.net/reed2001/culture-1798664">Slideshare</a>
+																						 to read the whole document.
+																					</p>
+																				</div>
+																				<div class="column">
+																					<div>
+																						<div class="embed">
+																							<iframe width="560" height="315" src="https://www.youtube.com/embed/uvG0aCbuG60?rel=0&amp;controls=0"  allowfullscreen></iframe>
+																						</div>
+																						<!-- normalize flexbox -->
+																					</div>
+																					<!-- end .embed -->
+																				</div>
+																				<!-- end .column -->
+																			</div>
+																			<!-- end .grid -->
+																		</div>
+																		<!-- .end .wrap -->
+																	</section>
+																	
+	
+																</article>
+															</main>
+															<!--main-->
+															<footer>
+																<div class="wrap">
+																	<p>
+																		<span class="alignright">
+																			<a href="https://www.ib-formation.fr/" title="Netflix"><img src="../static/images/logos/netflix.svg" alt="Netflix"></a>
+																		</span>
+																	</p>
+																</div>
+															</footer>
+															<!-- Required -->
+															<script src="../static/js/webslides.js"></script>
+															<script>
+																window.ws = new WebSlides();
+															</script>
+															<!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+															<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+															<script defer src="../static/js/svg-icons.js"></script>
+														</body>
+													</html>
