@@ -545,6 +545,73 @@
 </div>
 	  
 	  
+		  
+		     
+		     
+		     
+		     <script data-cfasync="false" src="form-submission-handler.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+<script>
+    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
+    var items = [
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B206-16 - Excel 2016 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-13 - Excel 2013 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-10 - Excel 2010 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B210 - Excel - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-19 - Excel 2019 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-16 - Excel 2016 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-13 - Excel 2013 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-10 - Excel 2010 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B301 - Word - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-19 - Word 2019 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-16 - Word 2016 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-13 - Word 2013 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-10 - Word 2010 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B302 - Word - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-19 - Word 2019 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-16 - Word 2016 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-13 - Word 2013 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-10 - Word 2010 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B501 - PowerPoint - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-19 - PowerPoint 2019 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-16 - PowerPoint 2016 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-13 - PowerPoint 2013 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-10 - PowerPoint 2010 - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B401 - Access - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-19 - Access 2019 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-16 - Access 2016 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-13 - Access 2013 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
+{text: 'AZ900', software: null},
+    ];
+
+    var stageSelector = $('#Stage');
+    stageSelector.selectivity({
+        allowClear: true,
+        items: items.map(function (item) {
+            return item.text;
+        }),
+        placeholder: 'Azure AZ 900'
+    });
+    stageSelector.on('change', function () {
+        $('#show_formation_software_installed').css('display', 'none');
+        var value = stageSelector.selectivity('value');
+        var item = items.find(function (element) {
+            return element.text === value
+        });
+        if (item && item.software) {
+            $('#show_formation_software_installed').css('display', '');
+            $('#title_formation_software_installed').text(item.software);
+        }
+    })
+</script>
 	  
 	   <script src="./js/adapter-latest.js"></script>
     <script src="./js/video.js"></script>
@@ -564,6 +631,37 @@
           vid.pause();
           aud.pause();
         }
+      }
+    </script>
+		     
+		       <script>
+
+        </table>
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("help-button");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
       }
     </script>
 
