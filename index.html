@@ -253,7 +253,7 @@
 		    
              
 		  <div class="ae-2 fromRight">
-                        <li><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
+                        
 						<fieldset>
                               <label for="name">Nom et Prénom</label>
 							  <br>
@@ -355,6 +355,12 @@
                             <!--                      <input id="Stage" name="Stage" placeholder="Azure AZ 900" />-->
                             <span id="Stage" class="selectivity-input"></span>
                         </fieldset>
+						
+						<fieldset>
+                            <label for="Stage">Enreprise</label>
+							<br>
+                            <input  style="width: 400px"id="Stage" name="Stage" placeholder="" />
+                        </fieldset>
                    
 				   <div id="show_formation_software_installed" style="display: none;">
                         <div>
@@ -368,7 +374,7 @@
                         </div>
                     </div>
 					
-					
+					<br>
 					<fieldset>
                             <label for="Date">Date de formation</label>
                             <input style="width: 400px" type="date" name="Date" id="start" name="trip-start"
@@ -504,14 +510,19 @@
           <ul class="grid">
             <li class="col-6-12 left">
               <h1 class="ae-2 fromLeft">Matériel</h1>
-              <p class="ae-3 fromLeft"><span class="opacity-8">N'oubliez pas de connecter votre casque et votre caméra.</span></p>
+			  
+			  
+			   <a class="ae-3 fromLeft" id="button" style="width: 45%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test vidéo / audio</a>
+              <p style="font-size: 100%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
+			  
+           
+			  
+			  
+			  </span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
 			   <audio id="gum-audio"></audio>
 			   
-			    <a id="button" style="width: 45%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test vidéo / audio</a>
-              <p style="font-size: 100%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
-			  
-			  
+			   
 			  <table>
                                        
                                               
@@ -554,7 +565,7 @@
                 <li class="fromCenter">
                      <div>
                    
-				   <video id="gum-video" playsinline style="width: 33%"></video> 
+				  <video id="gum-video" playsinline style="width: 40%"></video> 
 				   
                   </div>
                 </li>
