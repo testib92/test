@@ -19,7 +19,8 @@
 	<link href="css/slides.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Custom Styles -->
-
+	
+	 <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
 	 
 	 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 	 
@@ -119,7 +120,7 @@
 
 </svg>
 
- Panel Top #05 
+<!-- Panel Top #05 
 <nav class="panel top">
   <div class="sections desktop">
     <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
@@ -139,9 +140,11 @@
   </div>
 </nav>
 
-
+-->
 
 <!-- Sidebar -->
+
+
 <nav class="sidebar" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
@@ -357,6 +360,17 @@
                             <input  style="width: 400px"id="Stage" name="Stage" placeholder="" />
                         </fieldset>
                    
+				   <div id="show_formation_software_installed" style="display: none;">
+                        <div>
+                            <fieldset>
+                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+                                <select name="formation_software_installed" id="formation_software_installed">
+                                    <option value="non">non</option>
+                                    <option value="oui">oui</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
 					
 					<br>
 					<fieldset>
@@ -374,7 +388,7 @@
 	  
 		   
 		    
-           <div class="relative">
+         <!--     <div class="relative">
                 <img src="assets/img/icon-2.png" class="ae-3 fromCenter app-26" alt="app"/>
                 <div class="text-26">
                   <h3 class="ae-3 fromRight">Ember for Apple Watch</h3>
@@ -382,7 +396,7 @@
                     <p class="tiny opacity-6">People don&rsquo;t use a product<br>because of the great&nbsp;design.</p>
                   </div>
                 </div>
-              </div> 
+              </div> -->
             </li>
           </ul>
         </div>
@@ -394,7 +408,7 @@
 </section>
 
 		     
-Slide 1 (#34) SLIDE AVEC LE TELEPHONE
+<!-- Slide 1 (#34) SLIDE AVEC LE TELEPHONE
 <section class="slide fade-6 kenBurns">
   <div class="content">
     <div class="container">
@@ -417,9 +431,186 @@ Slide 1 (#34) SLIDE AVEC LE TELEPHONE
     </div>
   </div>
   <div class="background" style="background-image:url(assets/img/background/img-34.jpg)"></div>
-</section>   
+</section>   -->
 
 
+<!-- Slide 2 (#60) -->
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+          
+        <div class="fix-12-12">
+          <ul class="grid">
+            <li class="col-6-12 left">
+              <h1 class="ae-2 fromLeft">Débit</h1>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Merci de remplir les champs ci dessous avec les valeurs obtenu.</span></p>
+              <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
+			  
+			  <table> <!-- IC-->
+
+
+                            <tr>
+                                <fieldset>
+                                    <td><label for="Download">Download</label></td>
+									 <TD width=10%>&nbsp;</TD>
+                                    <td><label for="Upload">Upload</label></td>
+									 <TD width=10%>&nbsp;</TD>
+                                    <td><label for="Ping">Ping</label></td>
+                       
+                               </fieldset>
+                          </tr>
+                           <tr>
+                        <fieldset>
+                            <td><input style="width: 100px" id="Download" name="Download"  required placeholder="? Mbps" /></td>
+							 <TD width=10%>&nbsp;</TD>
+                            <td><input style="width: 100px" id="Upload" name="Upload"  required placeholder="? Mbps" /></td>
+							 <TD width=10%>&nbsp;</TD>
+                            <td><input style="width: 100px" id="Ping" name="Ping" placeholder="? Ms" /></td>
+                        </fieldset>
+                          </tr>
+
+                    </table>
+				
+              </ul>
+            </li>
+			
+			 
+            <li class="col-6-12 left ae-5 fromCenter">
+         
+               
+                <li class="fromCenter">
+                     <div>
+                   
+				    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe>
+				   
+                  </div>
+                </li>
+                
+             
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-60.jpg)"></div>
+</section>
+
+<!-- Slide 2 TEST CAMERA MATERIEL(#60) -->
+<section class="slide fade-6 kenBurns">
+ <audio id="gum-audio"></audio>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+          
+        <div class="fix-12-12">
+          <ul class="grid">
+            <li class="col-6-12 left">
+              <h1 class="ae-2 fromLeft">Matériel</h1>
+			  
+			  
+			   <a class="ae-3 fromLeft" id="button" style="width: 45%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test</a>
+              <p style="font-size: 100%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
+			  
+           
+			  
+			  
+			  </span></p>
+              <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
+			   <audio id="gum-audio"></audio>
+			   
+			   
+			  <table>
+                                       
+                                              
+                                             <tr> 
+                                                  
+                                             <TD>
+                                             <fieldset width=45%>
+                                            <label for="Video">Avez-vous une Webcam </label>
+                                            <input  style="width: 300px" id="Video" name="Video" placeholder="Oui / Non" />
+                                          </fieldset>
+                                                  
+                                                 
+                                                  
+                                               </TD>
+                                                  
+                                                    
+                                             
+                                       </tr>
+                                        <br>
+										<br>
+                                        <tr>
+                                             
+                                            <TD>
+                                            <fieldset width=45%>
+                                     <label for="Son">Avez-vous un retour Micro </label>
+                                    <input  style="width: 300px" id="Son" name="Son" required placeholder="Oui / Non" />
+                                </fieldset> 
+                                            </TD> 
+                                              
+                                          </tr>
+                                         
+                  </table>
+				
+              </ul>
+            </li>
+			
+			 
+            <li class="col-6-12 left ae-5 fromCenter">
+         
+               
+                <li class="fromCenter">
+                     <div>
+                   
+				  <video id="gum-video" playsinline style="width: 40%"></video> 
+				   
+                  </div>
+                </li>
+                
+             
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-60.jpg)"></div>
+</section>
+
+<!-- Slide 2 (#60) -->
+<section class="slide fade-6 kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+          
+        <div class="fix-12-12">
+          <ul class="grid">
+            <li class="col-6-12 left">
+              <h1 class="ae-2 fromLeft">Questions & Information </h1>
+              <p class="ae-3 fromLeft"><span class="opacity-8">Avez vous des questions, ou des informations a nous faire parvenir ?</span></p>
+              <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
+			  
+			 
+					  <textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
+
+                  
+              </ul>
+            </li>
+			
+			 
+        
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-60.jpg)"></div>
+</section>
 
 
 <!-- Slide 2 (#60) -->
@@ -439,25 +630,13 @@ Slide 1 (#34) SLIDE AVEC LE TELEPHONE
             <li class="col-6-12 left">
               <h1 class="ae-2 fromLeft">Envoi formulaire</h1>
               <p class="ae-3 fromLeft"><span class="opacity-8">Merci d'avoir répondu au formulaire, il ne vous reste plus cas l'envoyé en enppuyant sur le bouton ci dessous</span></p>
-              <ul>
-		<div>
-                    <br>
-                    <!-- <label for="message">Avez-vous des questions </label><br> -->
-            
-                                      
-                    <fieldset>
-                       
-                    
-                              <textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
-                      
-                              <button class="button-success pure-button button-xlarge"> 
+              <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
+			  
+								<button class="button-success pure-button button-xlarge"> 
                               <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
-                            
-                     </fieldset>
-                      
-                  
-                </div>
-		      </form>
+							  
+							  
+							  
               </ul>
             </li>
 			
@@ -474,10 +653,7 @@ Slide 1 (#34) SLIDE AVEC LE TELEPHONE
 
 		  
 		 <!--<script src="js/jquery.js"></script> -->    
-		 
-
-<script src="js/custom.js"></script>
-<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+		     
 		<script data-cfasync="false" src="form-submission-handler.js"></script>     
 	  <script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
 	   <script src="./js/adapter-latest.js"></script>
