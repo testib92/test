@@ -20,7 +20,6 @@
 
 	<!-- Custom Styles -->
 	
-	 <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
 	 
 	 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
 	 
@@ -218,6 +217,10 @@
   <div class="background" style="background-image:url(assets/img/background/img-91.jpg)"></div>
 </section>
 
+<div class="thankyou_message" style="display:none;">
+        <h2><em id="result"></em></h2>
+    </div>
+
 
 <!-- Slide 3 2 eme page présentation (#27) -->
 <section class="slide fade-6 kenBurns">
@@ -316,11 +319,6 @@
 
 <!-- Slide 3 3 eme page Formation (#27) -->
 <section class="slide fade-6 kenBurns">
-	
-	    <div class="thankyou_message" style="display:none;">
-        <h2><em id="result"></em></h2>
-    </div>
-	
 	
 	
   <div class="content">
@@ -616,13 +614,7 @@
 <!-- Slide 2 (#60) -->
 <section class="slide fade-6 kenBurns">
 
-<div class="thankyou_message" style="display:none;">
-        <h2><em id="result"></em></h2>
-    </div>
-	
-	<!-- Test ICi du bouton -->
-		<button class="button-success pure-button button-xlarge"> 
-                              <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
+
 				<!-- Test ICi du bouton -->
 				
   <div class="content">
@@ -635,7 +627,7 @@
               <h1 class="ae-2 fromLeft">Envoi formulaire</h1>
               <p class="ae-3 fromLeft"><span class="opacity-8">Merci d'avoir répondu au formulaire, il ne vous reste plus cas l'envoyé en enppuyant sur le bouton ci dessous</span></p>
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
-			  
+			  	<script data-cfasync="false" src="form-submission-handler.js"></script>   
 			    <fieldset class="pure-group">
 								<button class="button-success pure-button button-xlarge"> 
                               <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
@@ -660,7 +652,6 @@
 		 <!--<script src="js/jquery.js"></script> -->    
 		     
 		<script data-cfasync="false" src="form-submission-handler.js"></script>     
-	  <script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
 	   <script src="./js/adapter-latest.js"></script>
     <script src="./js/video.js"></script>
     <script src="./js/audio.js"></script>
