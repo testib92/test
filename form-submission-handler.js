@@ -55,7 +55,7 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-    data.Stage = $('#Stage').selectivity('value');
+   // data.Stage = $('#Stage').selectivity('value');
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
