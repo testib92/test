@@ -22,6 +22,9 @@
 	
 	 
 	 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+	      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
 	 
 	
      
@@ -220,7 +223,10 @@
             </li>
             <li class="col-7-12 left">
               <h1 class="ae-2 fromRight">Présentation</h1>
-		    
+			  
+		       <div class="thankyou_message" style="display:none;">
+        <h2><em id="result"></em></h2>
+    </div>
 		    
              
 		  <div class="ae-2 fromRight">
@@ -686,6 +692,37 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
+
+
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<script>
+    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
+    var items = [
+{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
+{text: 'AZ900', software: null},
+    ];
+
+    var stageSelector = $('#Stage');
+    stageSelector.selectivity({
+        allowClear: true,
+        items: items.map(function (item) {
+            return item.text;
+        }),
+        placeholder: 'Azure AZ 900'
+    });
+    stageSelector.on('change', function () {
+        $('#show_formation_software_installed').css('display', 'none');
+        var value = stageSelector.selectivity('value');
+        var item = items.find(function (element) {
+            return element.text === value
+        });
+        if (item && item.software) {
+            $('#show_formation_software_installed').css('display', '');
+            $('#title_formation_software_installed').text(item.software);
+        }
+    })
+</script>
 
  <!--<script src="js/jquery.js"></script> -->    
 		     
