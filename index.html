@@ -528,6 +528,71 @@
   </ul>
 </div>
 
+
+<!-- SCRIPTS -->
+
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+
+
+
+
+
+
+ <script src="./js/adapter-latest.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/audio.js"></script>
+    <script type="text/javascript">
+      function toggleTest() {
+        var but = document.getElementById("button");
+        var vid = document.getElementById("gum-video");
+        var aud = document.getElementById("gum-audio");
+
+        if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+          but.innerHTML = "Stop Test";
+          vid.play();
+          aud.play();
+        } else {
+          but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+          vid.pause();
+          aud.pause();
+        }
+      }
+    </script>
+    <script>
+
+  
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("help-button");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
 		
